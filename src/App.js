@@ -14,33 +14,42 @@ class App extends React.Component{
 			user: "",
 			data: "data",
 			username: "",
-			menu: true
+			menu: false
 		};
 	}
 
+
+	componentDidMount() {
+		fetch(`https://api.github.com/users/raiesbo`)
+		.then(response => response.json())
+		.then(profil => this.setState({ user: profil }));
+	}
+
+/*
 	fetchUser() {
 		fetch(`https://api.github.com/users/${ this.state.username }`)
 		.then(response => response.json())
 		.then(profil => this.setState({ user: profil }));
-
 	}
+*/
 
 	handleInput = (e) => {
-        this.setState({
-			username: e.target.value
-		})
+		this.setState({ username: e.target.value }, () => {
+			this.fetchUser();
+		});
 	}
-	
+
 	handleEnter = (e) => {
-		this.fetchUser()
-		if (e.key === 'Enter') {
-			if(this.state.username === this.state.user.login){
+		console.log(this.state.username)
+		if(this.state.username === this.state.user.login){
+			if (e.key === 'Enter') {
 				this.setState({
 					menu: false
 				})
 			}
 		}
 	}
+
 
 	render() {
 		return(

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './presentation.styles.css';
 
 class Presentation extends React.Component{
 
@@ -23,25 +24,24 @@ class Presentation extends React.Component{
 						</h1>
 
 						<h4 className="login">
-							@{this.props.user.login}
+							<a href={this.props.user.html_url}>@{this.props.user.login}</a>
 						</h4>
 
 						<h4 className="city">
-							Location: {this.props.user.location} Joined: {this.props.user.created_at}
+							<div className="plotIcon"/> {this.props.user.location} Joined: {this.props.user.created_at}
 						</h4>
 
 						<div className="miniWrapper">
 							<div className="box">
-								<span>{this.props.user.public_repos}</span> Repositories
+								<span>{this.props.user.public_repos}</span> <p>Repositories</p>
 							</div>
 							<div className="box">
-								<span>{this.props.user.followers}</span> Followers
+								<span className="boxNum">{this.props.user.followers}</span> <p>Followers</p>
 							</div>
 							<div className="box">
-								<span>{this.props.user.following}</span> Following
+								<span>{this.props.user.following}</span> <p>Following</p>
 							</div>
 						</div>
-						
 					</div>
 				</header>
     		</div>

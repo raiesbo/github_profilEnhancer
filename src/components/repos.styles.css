@@ -1,0 +1,16 @@
+.reposContainer{
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.repos{
+    background-color: rgba(255,255,255,0.75);
+    box-shadow: 2px 2px 5px  rgba(0,0,0,0.15);
+    border-radius: 10px;
+    margin: 30px;
+    height: 150px;
+    width: 20px;
+}
