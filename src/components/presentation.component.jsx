@@ -4,6 +4,8 @@ import './presentation.styles.css';
 
 class Presentation extends React.Component{
 
+
+
     render() {
         return(
             <div className="main">
@@ -28,7 +30,7 @@ class Presentation extends React.Component{
 						</h4>
 
 						<h4 className="city">
-							<div className="plotIcon"/> {this.props.user.location} Joined: {this.props.user.created_at}
+							<div className="plotIcon"/> {/*this.props.user.location*/} Joined: {this.props.user.created_at/*.substring(0,10)*/}
 						</h4>
 
 						<div className="miniWrapper">

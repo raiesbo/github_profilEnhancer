@@ -1,16 +1,41 @@
 .skillsContainer{
     margin: 0;
-    padding: 40px;
+    padding: 40px 0 40px 0;
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
+.skillsTitleWrappe{
+    margin: 0;
+    padding: 0 0 0 30px;
+    width: 1000px;
+    box-sizing: border-box;
+}
+
+.sectionTitle{
+    align-self: flex-start;
+}
+
+.skillsWrapper{
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+}
 .skills{
     background-color: rgba(255,255,255,0.75);
     box-shadow: 2px 2px 5px  rgba(0,0,0,0.15);
     border-radius: 10px;
-    margin: 30px;
+    margin: 10px;
+    padding: 10px;
     height: 300px;
     width: 250px;
+    align-self: center;
+    justify-self: center;
 }
