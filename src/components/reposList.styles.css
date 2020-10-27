@@ -27,14 +27,3 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     
 }
-.repos{
-    background-color: rgba(255,255,255,0.75);
-    box-shadow: 2px 2px 5px  rgba(0,0,0,0.15);
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    height: 150px;
-    width: 250px;
-    align-self: center;
-    justify-self: center;
-}

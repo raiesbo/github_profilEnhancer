@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.repo{
+    background-color: rgba(255,255,255,0.75);
+    box-shadow: 2px 2px 5px  rgba(0,0,0,0.15);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    height: 150px;
+    width: 250px;
+    align-self: center;
+    justify-self: center;
+}
+.repoTitle{
+    font-size: 1rem;
+    width: 100%;
+    height: 25%;
+}
+
+.repoDescription{
+    width: 100%;
+    height: 60%;
+    font-size: 0.5rem;
+}
+
+.repoDescription p{
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+.repoInfo{
+    font-size: 0.85rem;
+    width: 100%;
+    height: 30px;
+}
+
+.button p{
+    text-align: right;
+}

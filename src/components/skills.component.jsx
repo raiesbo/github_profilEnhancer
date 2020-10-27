@@ -22,7 +22,6 @@ class Skills extends React.Component{
                         ?
                     </div>
                 </div>
-                {console.log(this.props.repos)}
             </div>
         )
     }

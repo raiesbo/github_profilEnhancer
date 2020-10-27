@@ -2,7 +2,7 @@ import React from 'react';
 
 import Presentation from '../components/presentation.component';
 import Skills from '../components/skills.component';
-import Repos from '../components/repos.component';
+import ReposList from '../components/reposList.component';
 
 import './profil.styles.css';
 
@@ -34,7 +34,7 @@ class Profil extends React.Component{
             <div>
                 <Presentation user={this.props.user}/>
                 <Skills repos={this.state.repos}/>
-                <Repos repos={this.state.repos}/>
+                <ReposList repos={this.state.repos}/>
             </div>
         )
         
