@@ -30,7 +30,7 @@ class Presentation extends React.Component{
 						</h4>
 
 						<h4 className="city">
-							<div className="plotIcon"/> &#10148; {this.props.user.location} | Joined: {this.props.user.created_at/*.substring(0,10)*/}
+							<div className="plotIcon"/> {this.props.user?  `${this.props.user.location} |` : null} Joined: {(this.props.user? this.props.user.created_at.substring(0,10): null)}
 						</h4>
 
 						<div className="miniWrapper">

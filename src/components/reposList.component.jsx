@@ -7,12 +7,24 @@ import "./reposList.styles.css";
 
 
 class ReposList extends React.Component{
+
+
     render() {
         return(
             <div className="reposContainer">
 
                 <div className="reposTitleWrappe">
-                <h3 className="sectionTitle">Top Repositories:</h3>
+                    <h3 className="sectionTitle">
+                        Top Repositories {" "}
+                        <select id="filteredRepo" name="filteredRepo" onChange={(e) => this.props.inputHandler(e)}>
+
+                        <option value="stargazers_count">by Stars</option>
+                        <option value="forks">by Forks</option>
+                        <option value="size">by Bytes</option>
+
+                    </select>
+                    {" "}:
+                    </h3> 
                 </div>
                 
                 <div className="reposWrapper">
@@ -25,7 +37,7 @@ class ReposList extends React.Component{
 
 
                 </div>
-                {console.log(this.props.repos)}
+
             </div>
         )
     }

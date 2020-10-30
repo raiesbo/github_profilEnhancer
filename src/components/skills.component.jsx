@@ -11,15 +11,15 @@ class Skills extends React.Component{
                 </div>
                 <div className="skillsWrapper">
                     <div className="skills box1">
-                        Languages:
+                        Top Languages:
                     </div>
 
                     <div className="skills box2">
-                        Latest constributions:
+                        Languages by stars:
                     </div>
 
                     <div className="skills box3">
-                        ?
+                        Latest constributions:
                     </div>
                 </div>
             </div>
