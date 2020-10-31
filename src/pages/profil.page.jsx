@@ -17,20 +17,20 @@ class Profil extends React.Component{
             key: "stargazers_count"
         }
     }
-/*
+
     componentDidMount() {
 		fetch(`https://api.github.com/users/${ this.props.user.login }/repos`)
 		.then(response => response.json())
 		.then(user => this.setState({ repos: user }));
     }
-*/  
+/*  
     componentDidMount() {
 		fetch(`https://api.github.com/users/pereman2/repos`)
         .then(response => response.json())
         .then(profil => this.setState({ repos: profil }));
         
     }
-
+*/
     componentDidUpdate(prevProps, prevState) {
 
         if (this.state.key !== prevState.key) {
