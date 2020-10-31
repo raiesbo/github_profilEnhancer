@@ -4,12 +4,19 @@ The project seeks to present the public github user information in a nicer looki
 
 The main purpose of the project is to serve as an exercise to play around with the github Api and test what it could do.
 
+### Technologies:
+
+- Html
+- Css
+- React (JS)
+
 ### Progress:
 
-- [x] Init/login component (suffering from 403)
+- [x] Init/login component
 - [x] Presentation
 - [x] Repos
 - [ ] Stats
+- [ ] Responsive
 
 ### Color Palette:
 
