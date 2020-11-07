@@ -1,10 +1,11 @@
 import React from 'react';
 
+
 import './presentation.styles.css';
 
 class Presentation extends React.Component{
 
-
+	moment = require('moment');
 
     render() {
         return(
@@ -30,7 +31,14 @@ class Presentation extends React.Component{
 						</h4>
 
 						<h4 className="city">
-							<div className="plotIcon"/> {this.props.user.location?  `${this.props.user.location} |` : " " } Joined: {(this.props.user? this.props.user.created_at.substring(0,10) : null)}
+							<div className="plotIcon"/>
+								{this.props.user.location?  `${this.props.user.location} | ` : " " }
+								Joined: {" "}
+								{
+									
+									this.moment(this.props.user.created_at.substring(0,10)).format("MMMM Do YYYY")
+				
+								}
 						</h4>
 
 						<div className="miniWrapper">

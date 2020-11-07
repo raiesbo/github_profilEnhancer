@@ -26,8 +26,6 @@ class Repo extends React.Component{
                         <span className="b">{ this.props.repo.size }KB</span>
                     </div>
                 </div>
-                
-                {console.log("colors:", colors )}
             </div>
         )
     }
