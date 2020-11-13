@@ -3,6 +3,34 @@ import React from "react";
 import './skills.styles.css';
 
 class Skills extends React.Component{
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            languages: {},
+        }
+    }
+
+    componentDidUpdate () {
+        const repos = this.props.repos
+        for(let repo in repos) {
+            fetch(`https://api.github.com/repos/${this.props.user}/${repo}/languages`)
+            .then(response => response.json())
+            .then(language => this.setState({ languages: language }));
+        }
+    }
+
+    lenguageSorting = (arr) => {
+        for(let el in arr){
+            if(this.state.languages[el]){
+                // sum the new value to existing key
+            } else {
+                // create a new key(language) and value
+            }
+        }
+    }
+
+
     render() {
         return(  
             <div className="skillsContainer">
@@ -21,6 +49,7 @@ class Skills extends React.Component{
                     <div className="skills box3">
                         Latest constributions:
                     </div>
+                    {console.log(this.state.languages)}
                 </div>
             </div>
         )

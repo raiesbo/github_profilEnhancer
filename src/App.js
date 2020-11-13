@@ -24,8 +24,8 @@ class App extends React.Component{
 		.then(response => response.json())
 		.then(profil => this.setState({ user: profil }));
 	}
-
 */
+
 	fetchUser() {
 		fetch(`https://api.github.com/users/${ this.state.username }`)
 		.then(response => response.json())
